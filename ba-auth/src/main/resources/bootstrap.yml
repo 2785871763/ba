@@ -1,0 +1,19 @@
+# 端口配置
+server:
+  port: 5003
+# spring 配置
+spring:
+  application:
+    name: ba-auth # 服务名称
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery: # 使用nacos作为注册中心
+        server-addr: 39.105.109.222
+      config: # 使用nacos作为配置中心
+        server-addr: 39.105.109.222
+        file-extension: yaml # 配置文件格式
+        namespace: fde17558-d168-4408-bc4e-892aa114a26d # 指定命名空间
+        group: BA # 指定分组
+        prefix: ba-config

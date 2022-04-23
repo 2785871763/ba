@@ -1,0 +1,3 @@
+elasticSearch:
+  host: 120.77.71.220
+  port: 9200
